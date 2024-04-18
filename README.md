@@ -1,6 +1,6 @@
 # Python Learn
  Growing up with Python language.
 
-There is some exercises in python.
+ Resolved exercises:
 
 1.Variables
