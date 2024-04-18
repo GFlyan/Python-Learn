@@ -29,7 +29,7 @@ Deleção de elementos em uma lista
 -Também o método pop <list>.pop(position)
 
 -E também o método remove que diferentemente do comando del e do método pop,
-recebe como paramêtro um valor (str, int, float)
+recebe como paramêtro um argumento (<argument>)
 
 Organização de elementos em uma lista
 
