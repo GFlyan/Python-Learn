@@ -4,12 +4,16 @@
 #2. A soma dos valores da terceira coluna.
 #3. O maior valor da segunda linha.
 
+'Definições'
+
 matrice = [[[],[],[]], [[],[],[]], [[],[],[]]]
 i = 0
 j = 0
 pairs = int()
 sum_third_column = int()
 mayor_second_line = list()
+
+'Adequando à proposta'
 
 print('-'*30)
 
@@ -43,6 +47,8 @@ for line in matrice:
 for v in matrice[1]:
 
     mayor_second_line.append(v) #3. O maior valor da segunda linha.
+
+'Mostrando Resultados'
 
 print(f'-='*15)
 

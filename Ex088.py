@@ -1,12 +1,15 @@
 #Faça um programa que ajude um jogador da MEGA SENA a criar palpites. O programa vai perguntar quantos jogos
 #serão gerados e vai sortear entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
 
+'Definições'
+
 from time import sleep
 from random import randint
 
 result = list()
 all_results = list()
 
+'Adequando à proposta'
 
 print('-'*30)
 print(f'{"JOGA NA MEGA SENA":^30}')
@@ -30,6 +33,8 @@ for choice in range(user):
     result.sort()
     all_results.append(result[:])
     result.clear()
+
+'Mostrando Resultados'
 
 print('-='*15)
 

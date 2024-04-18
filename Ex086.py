@@ -2,9 +2,13 @@
 
 #No final mostre na tela com a formatação correta
 
+'Definições'
+
 matrice = [[[],[],[]], [[],[],[]], [[],[],[]]]
 i = 0
 j = 0
+
+'Adequando à proposta'
 
 print('-'*30)
 
@@ -19,6 +23,8 @@ for line in matrice:
         j += 1
 
     i += 1
+
+'Mostrando Resultados'
 
 print(f'-='*15)
 

@@ -2,7 +2,11 @@
 #única que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e
 #ímpares em ordem crescente.
 
+'Definições'
+
 values = [[], []]
+
+'Adequando à proposta'
 
 for v in range (0,7):
 
@@ -15,6 +19,8 @@ for v in range (0,7):
     else:
 
         values[1].append(value)
+
+'Mostrando Resultados'
 
 print(f'-='*20)
 print(f'Os valores pares digitados foram {sorted(values[0])}')

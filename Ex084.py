@@ -5,9 +5,13 @@
 #2.Uma listagem com as pessoas mais pesadas
 #3.Uma listagem com as pessoas mais leves
 
+'Definições'
+
 people = list()
 person = list()
 weight = list()
+
+'Adequando à Proposta'
 
 while True:
 
@@ -30,6 +34,8 @@ for p in people:
 
     weight.append(p[1])
     weight.sort()
+
+'Mostrando Resultados'
 
 print('-='*15)
 #1.
