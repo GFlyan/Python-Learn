@@ -1,4 +1,4 @@
-##Variáveis Compostas - Dicionários
+#Variáveis Compostas - Dicionários
 
 #Dicionários sao variáveis compostas que armazenam dados de forma semelhante à listas e tuplas,
 #entretanto suas posições referênciais são diferentes, sendo que em listas/tuplas
@@ -27,4 +27,40 @@
 #Utilizamos a seguinte sintaxe:
 
 #<dict>[position] = value
+
+###Para evitar relações/conexões durante atribuições utilizamos o método 
+#copy -> <dict>.copy(), sendo que em listas podemos utilizar slices [:] e
+#o método copy.
+
+#Faça um programa que leia nome e média de um aluno, guardando também 
+#a situação em um dicionário.
+
+#No final, mostre o conteúdo da estrutura na tela.
+
+'Definições'
+
+person = dict()
+
+'Adequando à proposta'
+
+name = input('Digite seu nome: ')
+
+person['nome'] = name
+person['média'] = float(input(f'Média de {person['nome']}: '))
+            
+'Mostrando respostas'
+    
+print('-='*15)
+print(f'Nome é igual a {person['nome']}')
+print(f'Média é igual a {person['média']}')
+print(f'Situação: ', end='')
+
+if person['média'] < 5:
+
+    print('REPROVADO')
+
+else:
+
+    print('APROVADO')
+
 
