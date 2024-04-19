@@ -26,7 +26,7 @@
 
 #Utilizamos a seguinte sintaxe:
 
-#<dict>[position] = value
+#<dict>["<position">] = value
 
 ###Para evitar relações/conexões durante atribuições utilizamos o método 
 #copy -> <dict>.copy(), sendo que em listas podemos utilizar slices [:] e
@@ -43,16 +43,14 @@ person = dict()
 
 'Adequando à proposta'
 
-name = input('Digite seu nome: ')
-
-person['nome'] = name
-person['média'] = float(input(f'Média de {person['nome']}: '))
+person['nome'] = input('Digite seu nome: ')
+person['média'] = float(input(f'Média de {person["nome"]}: '))
             
 'Mostrando respostas'
     
 print('-='*15)
-print(f'Nome é igual a {person['nome']}')
-print(f'Média é igual a {person['média']}')
+print(f'Nome é igual a {person["nome"]}')
+print(f'Média é igual a {person["média"]}')
 print(f'Situação: ', end='')
 
 if person['média'] < 5:
