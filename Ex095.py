@@ -10,9 +10,9 @@ gols = list()
 
 while True:
     
-    print('-'*30)
-    player['Nome'] = input('Nome do jogador: ').capitalize()
-    matchs = int(input(f'Quantas partidas {player["Nome"]} jogou? '))
+    print('='*30)
+    player['Nome'] = input('->Nome do jogador: ').capitalize()
+    matchs = int(input(f'->Quantas partidas {player["Nome"]} jogou? '))
     
     print('-='*15)
     for m in range(matchs):
@@ -29,7 +29,7 @@ while True:
     user = None
     while user != 'S' and user != 'N':
 
-        user = input('Quer continuar? [S/N] ').upper()
+        user = input('->Quer continuar? [S/N] ').upper()
 
     if user == 'N':
 
@@ -39,7 +39,7 @@ while True:
 
 print('='*40)
 print(f'COD {"NOME":<15}{"GOLS":<15}TOTAL')
-print('-'*40)
+print('='*40)
 for c, p in enumerate(players):
 
     print(f'{c+1}   {p["Nome"]:<15}{p["Gols"]}  {p["Total"]:>5}')
@@ -66,11 +66,12 @@ while True:
 
                 break
         
+        print('-'*40)
         print(f'Dados de {players[user]["Nome"]}')
 
         for c, g in enumerate(players[user]["Gols"]):
 
-            print(f'{c+1}º jogo: {g} {"gols" if g != 1 else "gol"}')
+            print(f'    {c+1}º jogo: {g} {"gols" if g != 1 else "gol"}')
         
         print('-'*40)
         
