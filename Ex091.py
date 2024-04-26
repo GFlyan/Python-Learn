@@ -8,21 +8,28 @@
 
 from time import sleep
 from random import randint
-payers = list()
+players = list()
 person = dict()
 
 'Adequando à proposta'
 
+print('Valores sorteados:')
+
 for c in range (4):
-
-    sleep(1)
+    
     person[f'Jogador {c+1}'] = randint(1, 6)
+    players.append(person.copy())
+    person.clear()
 
-for k, v in person.items():
+for i in players:
 
-    print(f'O {k} tirou {v}')
+    for k, v in i.items():
+ 
+        sleep(1)
+        print(f'O {k} tirou {v}')
 
 
 print('-='*15)
 print(f'Ranking dos jogadores:')
+
 
