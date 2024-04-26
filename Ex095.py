@@ -58,7 +58,7 @@ while True:
 
             user = int(input('-> Você deseja ver os dados de qual jogador? COD  ')) - 1
 
-            if user > len(players):
+            if user >= len(players):
 
                 print('Jogador não encontrado...')
 
