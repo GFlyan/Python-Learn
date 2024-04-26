@@ -30,8 +30,10 @@ for k, v in player.items():
 
 print('-='*15)
 
-print(f'O jogador {player['Nome']} jogou {matchs} partidas.')
+print(f'O jogador {player["Nome"]} jogou {matchs} partidas.')
 
 for c, g in enumerate(gols):
 
-    print(f'    => Na partida {c+1} fez {g, "gols" if g != 1 else g, "gol"}.')
+    print(f'    => Na {c+1}ª partida fez {g} {"gols" if g != 1 else "gol"}.')
+
+print(f'Foi um total de {sum(gols)} gols.')
