@@ -8,21 +8,34 @@
 
 from time import sleep
 from random import randint
-payers = list()
+from operator import itemgetter
+
+players = list()
 person = dict()
 
 'Adequando à proposta'
 
-for c in range (4):
+print('Valores sorteados:')
 
-    sleep(1)
+for c in range (4):
+    
     person[f'Jogador {c+1}'] = randint(1, 6)
 
-for k, v in person.items():
+players.append(person.copy())
 
-    print(f'O {k} tirou {v}')
+for i in players:
+
+    for k, v in i.items():
+ 
+        sleep(1)
+        print(f'O {k} tirou {v}')
 
 
 print('-='*15)
 print(f'Ranking dos jogadores:')
 
+players = sorted(person.items(), key=itemgetter(1), reverse=True)
+
+for c, p in enumerate(players):
+
+    print(f'{c+1}º lugar: {p[0]} com {p[1]}')
