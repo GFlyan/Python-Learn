@@ -71,3 +71,5 @@ for p in people:
 
         print('-'*30)
         print(f'Nome: {p["Nome"]}\nSexo: {p["Sexo"]}\nIdade: {p["Idade"]}')
+
+#FIm
