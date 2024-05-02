@@ -7,3 +7,15 @@
 # Olá, mundo!
 #-------------
 
+'Adequando à proposta'
+
+def escreva(text):
+
+    print('-'*len(text))
+    print(f'{text}')
+    print('-'*len(text))
+
+'Mostrando resultados'
+
+text = input('Digite algo: ').upper()
+escreva(text=text)

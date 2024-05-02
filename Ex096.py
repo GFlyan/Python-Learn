@@ -28,3 +28,16 @@ def <função>(*par), onde os parâmetros serão guardados em uma tupla
 #Faça um programa que tenha uma função chamada área().
 #A função deverá receber as dimensões de um terreno retangular (largura, comprimento) e mostre a área do terreno.
 
+'Adequando à proposta'
+
+def área(largura, comprimento):
+
+    print(f'{largura*comprimento}')
+
+
+largura = float(input('Largura: '))
+comprimento = float(input('Compriemento: '))
+
+'Mostrando resultados'
+
+área(largura=largura, comprimento=comprimento)
