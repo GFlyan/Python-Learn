@@ -29,7 +29,7 @@ def contador(inicio, fim, passo):
 
 #1. De 1 até 10, de 1 em 1
 
-contador(inicio=1, fim=10, passo=1)
+contador(inicio=1, fim=10, passo=3)
 
 #2. De 10 até 0, de 2 em 2
 
