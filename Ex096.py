@@ -32,11 +32,13 @@ def <função>(*par), onde os parâmetros serão guardados em uma tupla
 
 def área(largura, comprimento):
 
-    print(f'{largura*comprimento}')
+    print(f'A área de um terreno {largura}x{comprimento} é de {largura*comprimento}m².')
 
-
-largura = float(input('Largura: '))
-comprimento = float(input('Compriemento: '))
+print('-'*30)
+print(f'{"CONTROLE DE TERRENOS":^30}')
+print('-'*30)
+largura = float(input('Largura (m): '))
+comprimento = float(input('Comprimento (m): '))
 
 'Mostrando resultados'
 

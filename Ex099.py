@@ -6,6 +6,7 @@
 
 def maior(ints):
 
+    print(f'Forma informados {len(ints)} valores ao todo.')
     mayor = int()
     for c, n in enumerate(ints):
 
@@ -20,7 +21,7 @@ def maior(ints):
                 mayor = n
 
     print('-'*30)
-    print(f'O maior número fornecido foi: {mayor}')
+    print(f'O maior valor informado foi {mayor}')
     print('-'*30)
 
 

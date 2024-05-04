@@ -11,9 +11,10 @@
 
 def escreva(text):
 
-    print('-'*len(text))
-    print(f'{text}')
-    print('-'*len(text))
+    size = len(text)+2
+    print('~'*size)
+    print(f' {text} ')
+    print('~'*size)
 
 'Mostrando resultados'
 
