@@ -34,6 +34,7 @@ def área(largura, comprimento):
 
     print(f'A área de um terreno {largura}x{comprimento} é de {largura*comprimento}m².')
 
+
 print('-'*30)
 print(f'{"CONTROLE DE TERRENOS":^30}')
 print('-'*30)

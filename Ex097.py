@@ -16,6 +16,7 @@ def escreva(text):
     print(f' {text} ')
     print('~'*size)
 
+
 'Mostrando resultados'
 
 text = input('Digite algo: ').upper()
