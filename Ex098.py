@@ -25,26 +25,26 @@ def contador(inicio, fim, passo):
 
         print('-='*15)
         print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+        print('-'*30)
 
         if inicio < fim:
 
                 while inicio <= fim:
                         
-                        print(inicio, end= ' ')
+                        print(inicio, end= ' ', flush=True)
                         inicio += passo
-                        sleep(1)
-
-                print('FIM!')
+                        sleep(0.5)
 
         elif inicio > fim:
 
                 while inicio >= fim:
 
-                        print(inicio, end= ' ')
+                        print(inicio, end= ' ', flush=True)
                         inicio -= passo
-                        sleep(1)
+                        sleep(0.5)
 
-                print('FIM!')
+        print('FIM!')
+
 
 'Mostrando resultados'
 
