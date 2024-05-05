@@ -10,16 +10,16 @@
 
 from random import choice
 list_nums = list(range(0, 10))
-sorted_nums = list()
 
 'Adequando à proposta'
 
-def sorteia():
+def sorteia(any_list):
 
+    sorted_nums = list()
     print('Sorteando 5 valores da lista: ', end='')
     for i in range(5):
         
-        num_choice = choice(list_nums)
+        num_choice = choice(any_list)
         sorted_nums.append(num_choice)
         print(num_choice, end=' ')
 
@@ -30,7 +30,7 @@ def somaPar():
 
     print('-='*20)
     pairs = int()
-    sorteia()
+    sorted_nums = sorteia(list_nums)
     for i in sorted_nums:
 
         if (i % 2) == 0:
