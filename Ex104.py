@@ -13,11 +13,11 @@ def leiaInt(show):
 
         else:
         
-            print('É necessário um número...', end=' ')
+            print('\033[31mERRO! Digite um número inteiro válido.\033[37m')
 
     return value
 
 'Mostrando Resultado'
 
 num = leiaInt('Digite um número: ')
-print(num)
+print(f'Você acabou de digitar o número {num}')
