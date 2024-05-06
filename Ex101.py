@@ -35,3 +35,54 @@ return <...> -> O return é utilizado para retornar algo, podendo ser qualquer t
                 ou variável, desde que estabelecido na função.
 '''
 
+#Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto: NEGADO, OPCIONAL ou OBRIGATÓRIO nas eleições.
+
+'Adequando à Propósta'
+
+def voto(year_born):
+    """
+    -> A função voto retorna um valor que indica a possibilidade de voto de um indivíduo se baseando no ano de nascimento do mesmo, sendo que o ano de nascimento deve ser passado como parâmetro.
+
+    <param: year_born> -> Recebe o ano de nascimento
+    """
+
+    from datetime import datetime
+    age = datetime.now().year - year_born
+
+    if age < 16:
+
+        return f'Com {age} anos: VOTO NEGADO'
+    
+    elif 16 <= age <= 17 or age > 70:
+
+        return f'Com {age} anos: VOTO OPCIONAL'
+    
+    elif 18 <= age <= 70:
+
+        return f'Com {age} anos: VOTO OBRIGATÓRIO'
+
+
+'Mostrando Resultado'
+
+print('-'*30)
+year = int(input('Em que ano você nasceu? '))
+print(voto(year_born=year))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
