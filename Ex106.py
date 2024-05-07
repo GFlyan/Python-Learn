@@ -5,28 +5,32 @@
 #OBS: Use cores.
 
 
-def interactive_help():
+def PyHelp():
     """
-    -> interactive_help tem funcionalidade de fornecer informações sobre funções.
+    -> PyHelp tem funcionalidade de fornecer informações sobre funções.
     :return: Não possui retorno
     """
-    
+    from time import sleep
+
     while True:
         
-        print('*'*30)
-        function = input('Digite a função que você deseja saber as informações: ')
-        print('-='*15, '\n')
-        help_function =  help(function)
-        print('-='*15)
+        print('\033[30;42m~'*(len('SISTEMA DE AJUDA PyHelp')+4))
+        print('  SISTEMA DE AJUDA PyHelp  ')
+        print('~'*(len('SISTEMA DE AJUDA PyHelp')+4))
+        function = input('\033[0;0mFunção ou Biblioteca> ')
 
-        user = None
-        while user != 'CONTINUAR' and user != 'FIM':
+        if function == 'FIM':
 
-            user = input('[CONTINUAR/FIM] ').upper()
-
-        if user == 'FIM':
-
+            print('\033[30;41mFINALIZANDO...\33[0;0m')
             break
 
-interactive_help()
+        print('\033[30;44m~'*(len(f"Acessando o manual do comando '{function}'")+4))
+        print(f"  Acessando o manual do comando  '{function}'  ")
+        print('~'*(len(f"Acessando o manual do comando '{function}'")+4))
+
+        sleep(1.5)
+        print('\033[47;30m')
+        help_function =  help(function)
+
+PyHelp()
     
