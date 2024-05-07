@@ -5,6 +5,13 @@
 'Adequando à Propósta'
 
 def ficha(name='<desconhecido>', gols=0):
+    """
+    -> A função ficha tem utilidade de retornar uma frase com o nome do jogador e quantos gols ele fez no campeonato
+
+    :name: Nome do jogador
+    :gols: Quantidade de gols feitos pelo jogador
+    :return: Retorna o nome e a quantidade de gols feitas pelo jogador.
+    """
 
     return f'O jogador {name} fez {gols} gols(s) no campeonato.'
 

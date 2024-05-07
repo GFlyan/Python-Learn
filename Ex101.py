@@ -43,7 +43,8 @@ def voto(year_born):
     """
     -> A função voto retorna um valor que indica a possibilidade de voto de um indivíduo se baseando no ano de nascimento do mesmo, sendo que o ano de nascimento deve ser passado como parâmetro.
 
-    <param: year_born> -> Recebe o ano de nascimento
+    :param year_born: Recebe o ano de nascimento
+    :return: Situação da obrigatoriedade do voto
     """
 
     from datetime import datetime

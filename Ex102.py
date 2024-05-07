@@ -1,8 +1,15 @@
-#Crie um programa que tenha uma função fatorial() que receba dois parâmetros que indique o número a calcular e o outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
+ #Crie um programa que tenha uma função fatorial() que receba dois parâmetros que indique o número a calcular e o outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
 
 'Adequando à Propósta'
 
 def fatorial(num, show=False):
+    """
+    -> A função fatorial calcula o fatorial do dado parâmetro.
+
+    :num: Parâmetro que recebe o número que será calculado o fatorial
+    :show: Parâmetro que define se aparecerá ou não as operações realizadas para calcular o fatorial
+    :return: Retorna o fatorial do número fornecido
+    """
 
     fat = 1
     while num != 0:

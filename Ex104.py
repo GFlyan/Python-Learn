@@ -3,6 +3,10 @@
 'Adequando à Propósta'
 
 def leiaInt(show):
+    """
+    
+    
+    """
 
     while True:
 
