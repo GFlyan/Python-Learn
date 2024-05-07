@@ -3,9 +3,11 @@
 'Adequando à Propósta'
 
 def leiaInt(show):
-    """
-    
-    
+    """ 
+    -> A função leiaInt serve para validar se o valor informado é um valor inteiro.
+
+    :param show: Um parâmetro que tem função de input
+    :return: Retorna o valor em forma de inteiro 
     """
 
     while True:

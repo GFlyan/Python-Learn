@@ -6,9 +6,9 @@ def fatorial(num, show=False):
     """
     -> A função fatorial calcula o fatorial do dado parâmetro.
 
-    :num: Parâmetro que recebe o número que será calculado o fatorial
-    :show: Parâmetro que define se aparecerá ou não as operações realizadas para calcular o fatorial
-    :return: Retorna o fatorial do número fornecido
+    :param num: Parâmetro que recebe o número que será calculado o fatorial
+    :param show: Parâmetro que define se aparecerá ou não as operações realizadas para calcular o fatorial
+    :param return: Retorna o fatorial do número fornecido
     """
 
     fat = 1
