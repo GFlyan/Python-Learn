@@ -30,8 +30,8 @@ def fatorial(num, show=False):
                 
     return fat
 
+
 'Mostrando Resultado'
 
 value = int(input('Digite um valor para saber seu fatorial: '))
 print(fatorial(value, True))
-

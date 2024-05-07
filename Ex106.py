@@ -4,6 +4,7 @@
 
 #OBS: Use cores.
 
+'Adequando à Propósta'
 
 def PyHelp():
     """
@@ -31,6 +32,9 @@ def PyHelp():
         sleep(1.5)
         print('\033[47;30m')
         help_function =  help(function)
+
+
+'Mostrando Resultado'
 
 PyHelp()
     

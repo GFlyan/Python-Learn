@@ -23,6 +23,7 @@ def leiaInt(show):
 
     return value
 
+
 'Mostrando Resultado'
 
 num = leiaInt('Digite um número: ')

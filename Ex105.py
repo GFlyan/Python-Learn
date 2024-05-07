@@ -8,6 +8,8 @@
 
 #Adicione também as docstrings da função
 
+'Adequando à Propósta'
+
 def notas(*students_notes, sit=False):
     """
     -> A função student_notes tem funcionalidade de organizar em um dicionário a maior nota, menor nota, média das notas, quantidade de notas e até mesmo a situação da turma.
@@ -62,7 +64,8 @@ def notas(*students_notes, sit=False):
 
     return notas
 
+
 'Mostrando Resultado'
 
-notes = notas(7.0, 9, 10, 5.6, sit=True)
+notes = notas(5.5, 2.5, 10, 6.5, sit=True)
 print(notes)

@@ -15,9 +15,10 @@ def ficha(name='<desconhecido>', gols=0):
 
     return f'O jogador {name} fez {gols} gols(s) no campeonato.'
 
+
 'Mostrando Resultado'
 
 print('-'*30)
-player = input('Nome do Jogador: ')
+player = input('Nome do Jogador: ').title()
 amount_gols = input('Número de Gols: ')
 print(ficha(player, amount_gols))

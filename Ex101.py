@@ -54,11 +54,11 @@ def voto(year_born):
 
         return f'Com {age} anos: VOTO NEGADO'
     
-    elif 16 <= age <= 17 or age > 70:
+    elif 16 <= age < 18 or age > 70:
 
         return f'Com {age} anos: VOTO OPCIONAL'
     
-    elif 18 <= age <= 70:
+    elif age > 18:
 
         return f'Com {age} anos: VOTO OBRIGATÓRIO'
 
