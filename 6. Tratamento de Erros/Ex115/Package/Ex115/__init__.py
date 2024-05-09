@@ -1,6 +1,22 @@
+def ver_cadastros():
+
+    with open('records.txt', 'r') as doc:
+
+        doc = doc.read()
+
+    print(f'\033[47m{doc}\033[m')
+
+
+def novo_cadastro(name='', age=0):
+
+    with open('records.txt', 'a') as doc:
+
+        doc.write(f'\n{name}   \t{age}')
+
+    print(f'Novo registro de {name} adicionado!')
+
+
 def menu():
-
-
     
     print('='*30)
     while True:
@@ -39,18 +55,39 @@ def menu():
             print('-'*30)   
             print(('PESSOAS CADASTRADAS').center(30))
             print('-'*30)
-
+            ver_cadastros()
+            print()
 
         elif user == 2:
 
             print('-'*30)
             print(('NOVO CADASTRO').center(30))
             print('-'*30)
-
+            name = input('Nome: ')
             
+            while True:
+                
+                try:
+
+                    age = int(input('Idade: '))
+
+                except:
+
+                    print(f'\033[31mERRO! Digite um valor válido.\033[m')
+
+                else:
+
+                    break
+
+            novo_cadastro(name=name, age=age)
+
         elif user == 3: 
 
             print('='*30)
             break
 
-menu()
+def system():
+
+    menu()
+
+system()
