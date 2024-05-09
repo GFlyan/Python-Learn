@@ -4,7 +4,7 @@ def ver_cadastros():
 
         doc = doc.read()
 
-    print(f'\033[47m{doc}\033[m')
+    print(doc)
 
 
 def novo_cadastro(name='', age=0):
