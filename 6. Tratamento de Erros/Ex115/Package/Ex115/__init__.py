@@ -85,5 +85,3 @@ def system():
 
             print('='*30)
             break
-
-system()
