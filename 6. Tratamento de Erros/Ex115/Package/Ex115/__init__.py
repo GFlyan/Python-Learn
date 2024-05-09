@@ -16,7 +16,7 @@ def novo_cadastro(name='', age=0):
     print(f'Novo registro de {name} adicionado!')
 
 
-def menu():
+def system():
     
     print('='*30)
     while True:
@@ -85,9 +85,5 @@ def menu():
 
             print('='*30)
             break
-
-def system():
-
-    menu()
 
 system()
